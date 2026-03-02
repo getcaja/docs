@@ -1,46 +1,38 @@
 # Interface Overview
 
-Caja uses a three-panel layout with a bottom toolbar.
+Caja uses a three-panel layout with a floating toolbar.
 
-```
-┌──────────────────────────────────────────────────────┐
-│                     Title Bar                         │
-├────────────┬─────────────────────┬───────────────────┤
-│            │                     │                   │
-│   Tree     │      Canvas         │   Properties      │
-│   Panel    │                     │   Panel           │
-│            │                     │                   │
-│            │                     │                   │
-├────────────┴─────────────────────┴───────────────────┤
-│                     Toolbar                           │
-└──────────────────────────────────────────────────────┘
-```
-
-## Panels
-
-### Tree Panel (left)
-The layer hierarchy. Shows all elements on the current page as a collapsible tree. Also houses the **Assets** tab for managing reusable components.
-
-[Learn more →](/interface/tree-panel)
-
-### Canvas (center)
-The design workspace. Elements render live with Tailwind CSS. Click to select, drag to reorder, and use tools to create new elements.
-
-[Learn more →](/interface/canvas)
-
-### Properties Panel (right)
-Edit the selected element's properties — layout, size, spacing, typography, colors, borders, effects, and more. Every value maps to a Tailwind class.
-
-[Learn more →](/interface/properties-panel)
-
-### Toolbar (bottom)
-Quick access to element creation, canvas tools, viewport breakpoints, and preview mode.
-
-[Learn more →](/interface/toolbar)
+![Caja interface](/caja-ui.png)
 
 ## Title Bar
 
 Shows the current filename with an unsaved-changes indicator (●). The MCP status button on the right shows connection state — click it to configure AI agent connections.
+
+## Layers Panel
+
+The left sidebar has two tabs: **Layers** and **Assets**.
+
+The **Layers** tab shows the [Pages section](/concepts/pages) and the layer tree for the current page. The **Assets** tab manages reusable [components](/concepts/components).
+
+[Learn more →](/interface/layers-panel)
+
+## Canvas
+
+The design workspace. Elements render live with Tailwind CSS. Click to select, drag to reorder, and use tools to create new elements.
+
+[Learn more →](/interface/canvas)
+
+## Properties Panel
+
+The right sidebar. Edit the selected element's properties — layout, size, spacing, typography, colors, borders, effects, and more. Every value maps to a Tailwind class.
+
+[Learn more →](/interface/properties-panel)
+
+## Toolbar
+
+Floating bar at the bottom of the canvas. Quick access to element creation, canvas tools, viewport breakpoints, and preview mode.
+
+[Learn more →](/interface/toolbar)
 
 ## Panel Visibility
 
@@ -48,5 +40,5 @@ Toggle panels with keyboard shortcuts:
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘\` | Toggle Tree Panel |
+| `⌘\` | Toggle Layers Panel |
 | `⌘⇧\` | Toggle Properties Panel |

@@ -21,7 +21,7 @@ Press `Escape` to return to the Pointer tool.
 - **⌘A** to select all siblings of the current element.
 - **Click empty space** to select the root frame.
 
-Selected elements show an outline on the canvas and are highlighted in the tree panel.
+Selected elements show an outline on the canvas and are highlighted in the Layers Panel.
 
 ## Context Menu
 
@@ -53,7 +53,7 @@ Switch breakpoints from the toolbar. When a non-base breakpoint is active:
 
 - The canvas resizes to match the breakpoint width
 - Property changes are saved as **responsive overrides** (only the differences from desktop)
-- The tree panel shows small badges (`md`, `sm`) on frames that have overrides
+- The Layers Panel shows small badges (`md`, `sm`) on frames that have overrides
 - Property sections show an accent dot when they contain overrides, with a reset button on hover
 
 Responsive overrides generate `max-md:` and `max-sm:` prefixed Tailwind classes on export.

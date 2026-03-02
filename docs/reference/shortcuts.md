@@ -9,7 +9,7 @@
 | `⌘S` | Save |
 | `⌘⇧S` | Save As |
 | `⌘O` | Open file |
-| `⌘\` | Toggle Tree Panel |
+| `⌘\` | Toggle Layers Panel |
 | `⌘⇧\` | Toggle Properties Panel |
 | `⌘⇧A` | Toggle advanced mode |
 | `⌘⇧P` | Toggle preview mode |

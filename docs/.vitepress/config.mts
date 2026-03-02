@@ -35,7 +35,7 @@ export default defineConfig({
         text: 'Interface',
         items: [
           { text: 'Overview', link: '/interface/overview' },
-          { text: 'Tree Panel', link: '/interface/tree-panel' },
+          { text: 'Layers Panel', link: '/interface/layers-panel' },
           { text: 'Canvas', link: '/interface/canvas' },
           { text: 'Properties Panel', link: '/interface/properties-panel' },
           { text: 'Toolbar', link: '/interface/toolbar' },

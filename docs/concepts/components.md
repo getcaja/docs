@@ -23,7 +23,7 @@ Each instance is a deep clone of the master. It maintains a link back to the mas
 
 To edit a component's master:
 1. Right-click an instance → **Edit Master**
-2. The tree panel enters component edit mode, showing only the master
+2. The Layers Panel enters component edit mode, showing only the master
 3. Make your changes
 4. Close the edit view — changes propagate to all instances
 

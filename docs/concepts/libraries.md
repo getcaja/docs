@@ -5,13 +5,13 @@ Caja supports importing and exporting reusable components as `.cjl` (Caja Compon
 ## Import & Export
 
 ### Exporting
-1. Open the **Assets** tab in the Tree Panel
+1. Open the **Assets** tab in the Layers Panel
 2. Click the `+` menu → **Export Components**
 3. Select which components to include
 4. Save as a `.cjl` file
 
 ### Importing
-1. Open the **Assets** tab in the Tree Panel
+1. Open the **Assets** tab in the Layers Panel
 2. Click the `+` menu → **Import Components**
 3. Select a `.cjl` file
 4. Components are added to your project's catalog

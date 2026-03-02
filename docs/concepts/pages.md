@@ -4,12 +4,12 @@ Caja projects can contain multiple pages, each with its own frame tree and route
 
 ## Managing Pages
 
-Pages are listed in the **Pages section** of the Tree Panel. Each page has:
+Pages are listed in the **Pages section** of the Layers Panel. Each page has:
 - **Name** — Display name (e.g., "Home", "About")
 - **Route** — URL path (e.g., `/`, `/about`)
 
 ### Adding a Page
-Click the `+` button in the Pages section, or use the Add menu in the tree panel.
+Click the `+` button in the Pages section.
 
 ### Switching Pages
 Click a page name to switch to it. The canvas and tree update to show that page's content.

@@ -1,6 +1,6 @@
-# Tree Panel
+# Layers Panel
 
-The left panel has two tabs: **Layers** and **Assets**.
+The Layers Panel has two tabs: **Layers** and **Assets**.
 
 ## Layers Tab
 
