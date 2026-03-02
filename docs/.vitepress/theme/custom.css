@@ -1,0 +1,96 @@
+:root {
+  --vp-c-brand-1: #555;
+  --vp-c-brand-2: #444;
+  --vp-c-brand-3: #333;
+  --vp-c-brand-soft: rgba(100, 100, 100, 0.14);
+
+  --vp-button-brand-bg: #333;
+  --vp-button-brand-hover-bg: #444;
+  --vp-button-brand-active-bg: #222;
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-hover-border: transparent;
+
+  /* Kill all gradients */
+  --vp-home-hero-name-color: #222;
+  --vp-home-hero-name-background: none;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+}
+
+.dark {
+  /* Brand — pure white/gray, no color */
+  --vp-c-brand-1: #ccc;
+  --vp-c-brand-2: #ddd;
+  --vp-c-brand-3: #eee;
+  --vp-c-brand-soft: rgba(255, 255, 255, 0.06);
+
+  /* Buttons */
+  --vp-button-brand-bg: #fff;
+  --vp-button-brand-hover-bg: #e0e0e0;
+  --vp-button-brand-active-bg: #ccc;
+  --vp-button-brand-text: #000;
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-hover-border: transparent;
+
+  --vp-button-alt-bg: rgba(255, 255, 255, 0.08);
+  --vp-button-alt-hover-bg: rgba(255, 255, 255, 0.12);
+  --vp-button-alt-text: #ccc;
+
+  /* Surfaces — pure dark, no warm/cool tint */
+  --vp-c-bg: #111;
+  --vp-c-bg-alt: #161616;
+  --vp-c-bg-elv: #1a1a1a;
+  --vp-c-bg-soft: #1a1a1a;
+
+  /* Borders — neutral gray */
+  --vp-c-border: #262626;
+  --vp-c-divider: #1f1f1f;
+  --vp-c-gutter: #161616;
+
+  /* Text — white hierarchy */
+  --vp-c-text-1: #e5e5e5;
+  --vp-c-text-2: #999;
+  --vp-c-text-3: #666;
+
+  /* Sidebar */
+  --vp-sidebar-bg-color: #111;
+
+  /* Nav */
+  --vp-nav-bg-color: #111;
+
+  /* Kill all gradients */
+  --vp-home-hero-name-color: #fff;
+  --vp-home-hero-name-background: none;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+
+  /* Feature cards */
+  --vp-c-default-soft: rgba(255, 255, 255, 0.04);
+
+  /* Code blocks */
+  --vp-code-bg: #161616;
+
+  /* Inline code */
+  --vp-c-mute: #1a1a1a;
+}
+
+/* Hero name — kill gradient, plain white */
+.VPHero .name {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+/* Center hero when no image */
+.VPHero .container {
+  text-align: center;
+}
+.VPHero .main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.VPHero .actions {
+  justify-content: center;
+}
