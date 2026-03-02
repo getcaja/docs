@@ -10,11 +10,31 @@
   --vp-button-brand-border: transparent;
   --vp-button-brand-hover-border: transparent;
 
+  /* Sidebar — white, no gray bg */
+  --vp-sidebar-bg-color: #fff;
+  --vp-c-bg-alt: #fff;
+  --vp-c-bg-soft: #f9f9f9;
+
   /* Kill all gradients */
   --vp-home-hero-name-color: #222;
   --vp-home-hero-name-background: none;
   --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
+}
+
+/* Remove navbar bottom border */
+.VPNav .divider,
+.VPNavBar .divider,
+.VPNavBar .divider-line {
+  display: none !important;
+}
+.VPNavBar .content,
+.VPNavBar .content-body {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+.VPNavBarTitle.has-sidebar .title {
+  border-bottom: none !important;
 }
 
 .dark {
