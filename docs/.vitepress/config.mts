@@ -13,11 +13,11 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/caja-icon.png' }],
+    ['link', { rel: 'icon', href: '/caja-symbol.png' }],
   ],
 
   themeConfig: {
-    logo: '/caja-icon.png',
+    logo: '/caja-symbol.png',
     nav: [
       { text: 'Guide', link: '/guide/what-is-caja' },
       { text: 'MCP', link: '/mcp/overview' },
