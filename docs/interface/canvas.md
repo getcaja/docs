@@ -39,15 +39,24 @@ Right-click any element on the canvas for quick actions: Group, Ungroup, Duplica
 
 Zoom levels: 25%, 50%, 75%, 100%.
 
-## Responsive Preview
+## Responsive Design
 
-Switch viewport widths from the toolbar to test responsive layouts:
+Caja uses a **desktop-first** responsive system with three breakpoints:
 
-| Breakpoint | Width |
-|------------|-------|
-| Full | 100% |
-| Tablet | 768px |
-| Mobile | 375px |
+| Breakpoint | Label | Width |
+|------------|-------|-------|
+| `base` | Desktop | Full width |
+| `md` | Tablet | ≤ 768px |
+| `sm` | Mobile | ≤ 640px |
+
+Switch breakpoints from the toolbar. When a non-base breakpoint is active:
+
+- The canvas resizes to match the breakpoint width
+- Property changes are saved as **responsive overrides** (only the differences from desktop)
+- The tree panel shows small badges (`md`, `sm`) on frames that have overrides
+- Property sections show an accent dot when they contain overrides, with a reset button on hover
+
+Responsive overrides generate `max-md:` and `max-sm:` prefixed Tailwind classes on export.
 
 ## Preview Mode
 

@@ -29,7 +29,7 @@ Add a new element as a child of a given parent.
 
 ## update_frame
 
-Update properties of an existing frame.
+Update properties of an existing frame. When a non-base breakpoint is active, changes are saved as responsive overrides.
 
 **Parameters:**
 
@@ -37,7 +37,7 @@ Update properties of an existing frame.
 |---|---|---|---|
 | `id` | string | Yes | ID of the frame to update |
 | `classes` | string | No | Tailwind classes to apply |
-| `properties` | object | No | Properties to set (partial update) |
+| `properties` | object | No | Properties to set (partial update, deep-merged for responsive) |
 
 ## batch_update
 
@@ -63,6 +63,62 @@ Execute multiple operations in a single undo step. Supports variable substitutio
       "params": { "parent_id": "$0", "element_type": "text", "properties": { "content": "Subtitle" } }
     }
   ]
+}
+```
+
+## set_breakpoint
+
+Activate a responsive breakpoint. All subsequent `update_frame`, `update_spacing`, and `update_size` calls write to that breakpoint's overrides.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `breakpoint` | string | Yes | `base`, `md`, or `sm` |
+
+**Example:**
+
+```json
+{ "breakpoint": "md" }
+```
+
+Returns the active breakpoint, canvas width, and a hint about the workflow.
+
+## get_breakpoint
+
+Get the current active breakpoint and canvas width. No parameters.
+
+## get_responsive_overrides
+
+Get the responsive overrides for a specific frame.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `id` | string | Yes | ID of the frame |
+
+Returns the sparse override objects for `md` and `sm` breakpoints.
+
+## clear_responsive_overrides
+
+Clear responsive overrides at a specific breakpoint.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `id` | string | Yes | ID of the frame |
+| `breakpoint` | string | Yes | `md` or `sm` |
+| `keys` | string[] | No | Specific property keys to clear. Clears all if omitted |
+
+**Example:**
+
+```json
+{
+  "id": "frame_1",
+  "breakpoint": "md",
+  "keys": ["display", "gap"]
 }
 ```
 

@@ -46,6 +46,7 @@ export default defineConfig({
         items: [
           { text: 'Frames & Elements', link: '/concepts/frames' },
           { text: 'Layout (Flex & Grid)', link: '/concepts/layout' },
+          { text: 'Responsive Design', link: '/concepts/responsive' },
           { text: 'Tailwind Tokens', link: '/concepts/tokens' },
           { text: 'Components', link: '/concepts/components' },
           { text: 'Component Libraries', link: '/concepts/libraries' },

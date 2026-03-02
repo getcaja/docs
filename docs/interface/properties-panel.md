@@ -2,6 +2,12 @@
 
 The right panel shows editable properties for the selected element. Every value maps to a Tailwind CSS class.
 
+## Responsive Overrides
+
+When a non-base breakpoint is active (tablet or mobile), the header shows a **breakpoint pill** with a reset button. Property changes at non-base breakpoints are saved as sparse overrides — only the values that differ from desktop.
+
+Sections with overrides show an **accent dot** next to the title. Hover to reveal a reset button that clears overrides for that section.
+
 ## Element
 
 The top section shows:
