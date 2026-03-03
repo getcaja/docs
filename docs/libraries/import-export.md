@@ -4,14 +4,14 @@ Component libraries use the `.cjl` (Caja Component Library) format — a JSON fi
 
 ## Exporting
 
-1. Open the **Assets** tab in the Layers Panel
+1. Open the **Assets** tab in the Left Panel
 2. Click the `+` menu → **Export Components**
 3. Select which components to include
 4. Save as a `.cjl` file
 
 ## Importing
 
-1. Open the **Assets** tab in the Layers Panel
+1. Open the **Assets** tab in the Left Panel
 2. Click the `+` menu → **Import Components**
 3. Select a `.cjl` file
 4. Components are added to your project's catalog

@@ -1,10 +1,8 @@
-# Layers Panel
+# Left Panel
 
-The Layers Panel has two tabs: **Layers** and **Assets**.
+The left panel has two tabs: **File** and **Assets**.
 
-## Layers Tab
-
-Displays the element hierarchy for the current page as a collapsible tree.
+## File Tab
 
 ### Pages Section
 Lists all pages in the project. Click a page to switch to it. Use the `+` button to add a new page. Right-click for options like Duplicate and Delete.
@@ -31,8 +29,8 @@ Right-click any element for:
 | Create Component | — |
 | Delete | `Delete` |
 
-### Add Menu
-Click the `+` button in the header to add elements: Frame, Text, Link, Image, Button, Input, Textarea, or Select.
+### Add Element
+Click the `+` button in the Layers header to insert elements: Add Frame, Add Text, Add Link, Add Image, Add Button, Add Input, Add Textarea, or Add Select.
 
 ## Assets Tab
 
@@ -40,4 +38,12 @@ Manages your reusable [components](/concepts/components). Components are organiz
 
 - **Dragged** onto the canvas to insert an instance
 - **Previewed** on hover (with Insert and Edit buttons)
-- **Imported/Exported** as `.cjl` library files via the `+` menu
+
+### Import & Export
+
+Use the `+` menu in the Assets tab to import or export component libraries as `.cjl` files.
+
+- **Import Components** — Load a `.cjl` file into your project
+- **Export Components** — Save selected components as a `.cjl` file
+
+See [Import & Export](/libraries/import-export) for details on the file format.

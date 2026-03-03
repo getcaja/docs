@@ -4,7 +4,7 @@ Caja projects can contain multiple pages, each with its own frame tree and route
 
 ## Managing Pages
 
-Pages are listed in the **Pages section** of the Layers Panel. Each page has:
+Pages are listed in the **Pages section** of the Left Panel. Each page has:
 - **Name** — Display name (e.g., "Home", "About")
 - **Route** — URL path (e.g., `/`, `/about`)
 

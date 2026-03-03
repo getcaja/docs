@@ -8,11 +8,11 @@ Caja uses a three-panel layout with a floating toolbar.
 
 Shows the current filename with an unsaved-changes indicator (●). The MCP status button on the right shows connection state — click it to configure AI agent connections.
 
-## Layers Panel
+## Left Panel
 
-The left sidebar has two tabs: **Layers** and **Assets**.
+The left sidebar has two tabs: **File** and **Assets**.
 
-The **Layers** tab shows the [Pages section](/concepts/pages) and the layer tree for the current page. The **Assets** tab manages reusable [components](/concepts/components).
+The **File** tab shows the [Pages section](/concepts/pages) and the layer tree for the current page. The **Assets** tab manages reusable [components](/concepts/components) with import/export support.
 
 [Learn more →](/interface/layers-panel)
 
@@ -30,7 +30,7 @@ The right sidebar. Edit the selected element's properties — layout, size, spac
 
 ## Toolbar
 
-Floating bar at the bottom of the canvas. Quick access to element creation, canvas tools, viewport breakpoints, and preview mode.
+Floating bar at the bottom of the canvas. Quick access to canvas tools, element creation, viewport breakpoints, and preview mode.
 
 [Learn more →](/interface/toolbar)
 
@@ -40,5 +40,5 @@ Toggle panels with keyboard shortcuts:
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘\` | Toggle Layers Panel |
-| `⌘⇧\` | Toggle Properties Panel |
+| `⌘1` | Toggle Left Panel |
+| `⌘2` | Toggle Properties Panel |

@@ -9,10 +9,15 @@ Switch between tools using the toolbar or keyboard shortcuts:
 | Tool | Shortcut | Description |
 |------|----------|-------------|
 | **Pointer** | `V` | Select and interact with elements |
-| **Frame** | `F` | Click and drag to draw new frames |
+| **Frame** | `F` | Click to insert a new frame |
 | **Text** | `T` | Click to create a text element |
+| **Image** | `I` | Pick a file, then click to place the image |
 
 Press `Escape` to return to the Pointer tool.
+
+::: tip
+Double-click a tool button in the toolbar to insert the element immediately into the selected frame, without entering click-to-place mode.
+:::
 
 ## Selection
 
@@ -21,7 +26,7 @@ Press `Escape` to return to the Pointer tool.
 - **⌘A** to select all siblings of the current element.
 - **Click empty space** to select the root frame.
 
-Selected elements show an outline on the canvas and are highlighted in the Layers Panel.
+Selected elements show an outline on the canvas and are highlighted in the Left Panel.
 
 ## Context Menu
 

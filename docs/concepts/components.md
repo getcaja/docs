@@ -5,7 +5,7 @@ Components are reusable frame trees. Create a component once, then insert instan
 ## Creating a Component
 
 1. Select a frame (or group of frames)
-2. Right-click → **Create Component** (or use the Assets panel)
+2. Click the **Create Component** button (component icon) in the top-right corner of the Properties Panel — or right-click → **Create Component**
 3. The frame is saved as a **master component**
 
 The master lives in a special component page, separate from your regular pages.
@@ -23,7 +23,7 @@ Each instance is a deep clone of the master. It maintains a link back to the mas
 
 To edit a component's master:
 1. Right-click an instance → **Edit Master**
-2. The Layers Panel enters component edit mode, showing only the master
+2. The Left Panel enters component edit mode, showing only the master
 3. Make your changes
 4. Close the edit view — changes propagate to all instances
 
@@ -53,10 +53,10 @@ Right-click an instance for:
 
 ## Categories
 
-Organize components with tags. The Assets panel groups components by category. Use the `+` menu to create new categories.
+Organize components with tags. The Assets tab groups components by category. Use the `+` menu to create new categories.
 
 ## Import & Export
 
-Share components as `.cjl` (Caja Component Library) files:
-- **Export** — Select components → Export from the `+` menu
-- **Import** — Load a `.cjl` file from the `+` menu
+Share components as `.cjl` (Caja Component Library) files via the `+` menu in the Assets tab:
+- **Export Components** — Select which components to include and save as a `.cjl` file
+- **Import Components** — Load a `.cjl` file into your project

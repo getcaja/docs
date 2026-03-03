@@ -17,14 +17,14 @@ Everything in Caja is a **frame**. A frame is a node in the layout tree with pro
 
 ## The Frame Tree
 
-Frames are nested in a tree structure. Every page has a **root frame** (called **Body** in the Layers Panel) that acts as the top-level container. All other frames are children (or descendants) of the root.
+Frames are nested in a tree structure. Every page has a **root frame** (called **Body** in the Left Panel) that acts as the top-level container. All other frames are children (or descendants) of the root.
 
-![Frame tree in the Layers Panel](/caja-frame-tree.png)
+![Frame tree in the Left Panel](/caja-frame-tree.png)
 
 ## Naming
 
 Every frame has a display name. Names are used as:
-- Labels in the Layers Panel
+- Labels in the Left Panel
 - Override keys when using [components](/concepts/components)
 - Class names in exported code
 

@@ -35,7 +35,7 @@ export default defineConfig({
         text: 'Interface',
         items: [
           { text: 'Overview', link: '/interface/overview' },
-          { text: 'Layers Panel', link: '/interface/layers-panel' },
+          { text: 'Left Panel', link: '/interface/layers-panel' },
           { text: 'Canvas', link: '/interface/canvas' },
           { text: 'Properties Panel', link: '/interface/properties-panel' },
           { text: 'Toolbar', link: '/interface/toolbar' },
@@ -60,6 +60,14 @@ export default defineConfig({
           { text: 'Overview', link: '/mcp/overview' },
           { text: 'Connecting an Agent', link: '/mcp/connecting' },
           { text: 'Tools Reference', link: '/mcp/tools' },
+        ],
+      },
+      {
+        text: 'Libraries',
+        items: [
+          { text: 'Import & Export', link: '/libraries/import-export' },
+          { text: 'Radix', link: '/libraries/radix' },
+          { text: 'shadcn/ui', link: '/libraries/shadcn' },
         ],
       },
       {

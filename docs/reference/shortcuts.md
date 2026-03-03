@@ -9,9 +9,8 @@
 | `⌘S` | Save |
 | `⌘⇧S` | Save As |
 | `⌘O` | Open file |
-| `⌘\` | Toggle Layers Panel |
-| `⌘⇧\` | Toggle Properties Panel |
-| `⌘⇧A` | Toggle advanced mode |
+| `⌘1` | Toggle Left Panel |
+| `⌘2` | Toggle Properties Panel |
 | `⌘⇧P` | Toggle preview mode |
 
 ## Canvas
@@ -21,6 +20,7 @@
 | `V` | Pointer tool |
 | `F` | Frame tool |
 | `T` | Text tool |
+| `I` | Image tool |
 | `Escape` | Return to Pointer |
 | `⌘+` | Zoom in |
 | `⌘-` | Zoom out |

@@ -11,10 +11,12 @@ Sections with overrides show an **accent dot** next to the title. Hover to revea
 ## Element
 
 The top section shows:
-- **Type badge** — The element type (Box, Text, Image, etc.)
+- **Create Component** — Component icon button in the top-right corner, saves the selected frame as a reusable component
+- **Type badge** — The element type (Frame, Text, Image, etc.)
 - **Name** — Editable display name
-- **Visibility** — Toggle show/hide
-- **HTML tag** — Choose the semantic tag (div, section, header, p, h1–h6, etc.)
+- **HTML tag** — `<>` icon with a tag selector (div, section, header, p, h1–h6, etc.)
+- **Class** — Custom CSS class name for export
+- **ID** — Custom HTML id for export
 
 Element-specific controls appear based on type:
 - **Text** — Content editor
@@ -62,10 +64,14 @@ Visual control for **Padding** and **Margin**, each with Top, Right, Bottom, Lef
 
 Available for text-like elements:
 
-- Font family, size, weight
+- Font family (Sans Serif, Serif, Monospace), size, weight
 - Line height, letter spacing
 - Text align, transform, decoration
 - Italic toggle
+
+::: tip Google Fonts
+Google Fonts can be set via MCP by passing the font name as `fontFamily` (e.g., `"Playfair Display"`). The font is loaded automatically on the canvas. Built-in options are limited to Sans Serif, Serif, and Monospace — use an AI agent for access to the full Google Fonts catalog.
+:::
 
 ## Fill (Background)
 
