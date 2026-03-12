@@ -17,24 +17,26 @@ The top section shows:
 - **HTML tag** — `<>` icon with a tag selector (div, section, header, p, h1–h6, etc.)
 - **Class** — Custom CSS class name for export
 - **ID** — Custom HTML id for export
+- **Hidden** — Toggle to hide the element (emits `hidden` Tailwind class)
 
 Element-specific controls appear based on type:
 - **Text** — Content editor
-- **Image** — Source file picker, alt text
+- **Image** — Source file picker, alt text, object fit
 - **Link** — Href (link to pages or external URLs)
-- **Input** — Type, placeholder, value
+- **Input** — Type (text, email, password, number, search, tel, url, date, time, checkbox, radio, range), placeholder, value, defaultValue. Checkbox and radio show a checked toggle; radio also supports inputName for grouping. Range shows min/max controls. Number shows min/max/step.
+- **Textarea** — Placeholder, rows
 - **Select** — Options list
 
 ## Layout
 
 Controls how the element arranges its children:
 
-- **Display mode** — Block, Flex Row, Flex Column, or Grid
+- **Display mode** — Flex Row, Flex Column, Inline Flex, or Grid
 - **Direction** — Row/Column with reverse option
 - **Wrap** — Allow children to wrap to next line
 - **Justify** — Main-axis alignment (start, center, end, between, around)
 - **Align** — Cross-axis alignment (start, center, end, stretch)
-- **Gap** — Spacing between children
+- **Gap** — Spacing between children (includes Space/auto option for justify-between)
 
 For **Grid** layouts: columns, rows, and auto-flow controls.
 
@@ -58,16 +60,18 @@ Visual control for **Padding** and **Margin**, each with Top, Right, Bottom, Lef
 
 - **Position type** — Static, Relative, Absolute, Fixed, Sticky
 - **Inset** — Top, Right, Bottom, Left offsets (when positioned)
-- **Z-Index**
+- **Z-Index** — Layer ordering (uses `z-0` through `z-50` tokens)
 
 ## Typography
 
 Available for text-like elements:
 
-- Font family (Sans Serif, Serif, Monospace), size, weight
+- Font family (Sans Serif, Serif, Monospace, or Google Fonts via MCP), size, weight
 - Line height, letter spacing
+- Text color (color picker with Tailwind token grid)
 - Text align, transform, decoration
 - Italic toggle
+- White space control
 
 ::: tip Google Fonts
 Google Fonts can be set via MCP by passing the font name as `fontFamily` (e.g., `"Playfair Display"`). The font is loaded automatically on the canvas. Built-in options are limited to Sans Serif, Serif, and Monospace — use an AI agent for access to the full Google Fonts catalog.
@@ -76,32 +80,38 @@ Google Fonts can be set via MCP by passing the font name as `fontFamily` (e.g., 
 ## Fill (Background)
 
 - **Color picker** — Hex input + color grid with Tailwind token matching
-- **Opacity** — 0–100%
+- **Opacity** — 0–100% (uses Tailwind opacity tokens)
 - **Background image** — URL, size, position, repeat
 
 ## Border
 
-- **Width** — Per-side (top, right, bottom, left)
+- **Width** — Per-side (top, right, bottom, left) with Tailwind tokens
 - **Style** — Solid, Dashed, Dotted
-- **Color** — Same picker as fill
-- **Radius** — Per-corner (top-left, top-right, bottom-right, bottom-left)
+- **Color** — Same color picker as fill, with Tailwind token matching
+- **Radius** — Per-corner (top-left, top-right, bottom-right, bottom-left) with Tailwind tokens
 
 ## Effects
 
 - **Box shadow** — Preset sizes (sm, base, md, lg, xl, 2xl)
-- **Blur** — Gaussian blur
+- **Blur** — Gaussian blur (sm, base, md, lg, xl, 2xl, 3xl)
 - **Backdrop blur** — Blur behind the element
-- **Opacity**
+- **Opacity** — Element opacity
 - **Cursor** — Default, pointer, text, not-allowed, grab
 
 ## Transform
 
-- **Rotate** — Degrees
-- **Scale** — Percentage
+- **Rotate** — Degrees (0, 1, 2, 3, 6, 12, 45, 90, 180)
+- **Scale** — Percentage (0, 50, 75, 90, 95, 100, 105, 110, 125, 150)
 - **Translate** — X/Y offset in pixels
+- **Skew** — X/Y skew in degrees (0, 1, 2, 3, 6, 12)
+- **Transform Origin** — Anchor point for transforms
 
 ## Transition
 
 - **Property** — All, colors, opacity, shadow, transform
-- **Duration** — Milliseconds
+- **Duration** — Milliseconds (75, 100, 150, 200, 300, 500, 700, 1000)
 - **Easing** — Linear, ease-in, ease-out, ease-in-out
+
+## Tailwind Classes
+
+At the bottom of the panel, a text input allows adding arbitrary Tailwind classes directly. Classes entered here are passed through to the exported code without modification — useful for utility classes not covered by the visual controls.

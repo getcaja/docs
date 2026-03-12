@@ -3,7 +3,7 @@
 Components matching [Radix UI](https://www.radix-ui.com/) primitives — unstyled, accessible building blocks.
 
 ::: info Coming Soon
-This library is currently in development.
+This library is planned for a future release.
 :::
 
 ## Planned Components

@@ -1,44 +1,63 @@
 # Keyboard Shortcuts
 
-## General
+## File
+
+| Shortcut | Action |
+|----------|--------|
+| `⌘S` | Save |
+| `⌘⇧S` | Save As |
+| `⌘O` | Open file |
+
+## Edit
 
 | Shortcut | Action |
 |----------|--------|
 | `⌘Z` | Undo |
 | `⌘⇧Z` | Redo |
-| `⌘S` | Save |
-| `⌘⇧S` | Save As |
-| `⌘O` | Open file |
-| `⌘1` | Toggle Left Panel |
-| `⌘2` | Toggle Properties Panel |
-| `⌘⇧P` | Toggle preview mode |
+| `⌘C` | Copy |
+| `⌘X` | Cut |
+| `⌘V` | Paste |
+| `⌘D` | Duplicate |
+| `F2` | Rename selected |
+| `Delete` | Delete selected |
 
-## Canvas
+## Structure
+
+| Shortcut | Action |
+|----------|--------|
+| `⌘G` | Group (wrap in box) |
+| `⌘⇧G` | Ungroup (remove wrapper) |
+| `↑` `↓` `←` `→` | Reorder within parent (direction-aware) |
+
+## Selection
+
+| Shortcut | Action |
+|----------|--------|
+| `Click` | Select frame |
+| `Double Click` | Drill into frame |
+| `⌘+Click` | Deep select (bypass hierarchy) |
+| `Escape` | Deselect / cancel |
+
+## Tools
 
 | Shortcut | Action |
 |----------|--------|
 | `V` | Pointer tool |
 | `F` | Frame tool |
 | `T` | Text tool |
-| `I` | Image tool |
+| `I` | Image tool (opens file picker) |
 | `Escape` | Return to Pointer |
-| `⌘+` | Zoom in |
-| `⌘-` | Zoom out |
-| `⌘0` | Reset zoom to 100% |
 
-## Selection & Editing
+## View
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘A` | Select all siblings |
-| `⌘C` | Copy |
-| `⌘X` | Cut |
-| `⌘V` | Paste |
-| `⌘D` | Duplicate |
-| `⌘G` | Group |
-| `⌘⇧G` | Ungroup |
-| `F2` | Rename selected |
-| `Delete` | Delete selected |
-| `↑` `↓` | Reorder within parent |
-| `←` `→` | Collapse/expand (column layouts) |
-| `Escape` | Deselect |
+| `⌘1` | Toggle Left Panel |
+| `⌘2` | Toggle Properties Panel |
+| `⌘3` | Toggle Toolbar |
+| `⌘P` | Toggle preview mode |
+| `⌘→` | Next breakpoint |
+| `⌘←` | Previous breakpoint |
+| `⌘+` | Zoom in |
+| `⌘-` | Zoom out |
+| `⌘0` | Reset zoom to 100% |

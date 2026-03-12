@@ -15,19 +15,30 @@ For the Image tool, a native file picker opens first. After selecting a file, cl
 
 ### Add Element
 
-The `+` button opens a menu to insert elements directly into the selected frame: Add Frame, Add Text, Add Link, Add Image, Add Button, Add Input, Add Textarea, Add Select.
+The `...` (More Elements) button opens a menu to insert additional elements into the selected frame: Link, Button, Input, Textarea, Select.
 
 ### Breakpoints
 
-A dropdown to switch responsive modes:
+A segmented toggle to switch responsive breakpoints:
 
 | Breakpoint | Label | Canvas Width |
 |------------|-------|-------------|
-| `base` | Desktop | Full |
-| `md` | Tablet | 767px |
-| `sm` | Mobile | 375px |
+| `base` | LG | Full |
+| `xl` | MD | 1024px |
+| `md` | SM | 480px |
 
-An accent dot appears on the breakpoint icon when the current breakpoint has responsive overrides. Inside the dropdown, small dots on each option indicate which breakpoints have overrides across the project.
+An indicator dot appears on breakpoint segments that have responsive overrides across the project.
+
+### Zoom
+
+Zoom controls with preset levels: 25%, 50%, 75%, 100%. Use `⌘+` / `⌘-` to zoom in/out, `⌘0` to reset.
+
+## View Settings
+
+These options in the **View** menu affect how the toolbar and canvas behave:
+
+- **Spacing Grid** (Off / 4px / 8px) — Filters spacing token dropdowns to only show multiples of the selected grid size. At 8px, you'll only see `gap-2` (8px), `gap-4` (16px), `gap-8` (32px), etc. Default: 4px.
+- **Auto-Style New Frames** — Gives new box frames a random background color and 32px height so they're visible immediately. Default: on.
 
 ### Preview
 The eye icon (`⌘⇧P`) toggles preview mode, which disables editing and enables link navigation.

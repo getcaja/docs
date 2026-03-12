@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Caja',
-  description: 'Visual layout builder with AI-powered MCP integration',
+  description: 'A design tool built for the AI era. No middleware, no translation layers. Design by hand, delegate to AI, or both.',
   lang: 'en-US',
   appearance: 'dark',
 

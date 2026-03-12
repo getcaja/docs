@@ -32,3 +32,9 @@ Link elements can target pages via their route using the Href dropdown in the pr
 Select a page (click its name in the Pages section) to edit its properties in the right panel:
 - **Name** — The page title
 - **Route** — The URL path
+
+## Component Pages
+
+Components are stored on a special hidden page that doesn't appear in the pages list. When you enter **component edit mode** (right-click an instance → Edit Master, or via MCP `edit_component`), Caja switches to this hidden page showing just the component master in isolation.
+
+When you exit edit mode, changes propagate to all instances of the component across all pages, and you return to the page you were on before.

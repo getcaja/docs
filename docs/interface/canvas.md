@@ -28,6 +28,14 @@ Double-click a tool button in the toolbar to insert the element immediately into
 
 Selected elements show an outline on the canvas and are highlighted in the Left Panel.
 
+## Text Editing
+
+Double-click a text element on the canvas to enter inline text editing mode. Type to edit the content directly. Press `Escape` or click outside to finish editing.
+
+## Drag to Reorder
+
+Drag elements on the canvas to reorder them within their parent. A pointer-down-and-move gesture initiates the drag — the element follows your cursor with visual feedback showing the drop position. Hold `Alt` while dragging to duplicate.
+
 ## Context Menu
 
 Right-click any element on the canvas for quick actions: Group, Ungroup, Duplicate, Create Component, and Delete.
@@ -46,26 +54,26 @@ Zoom levels: 25%, 50%, 75%, 100%.
 
 ## Responsive Design
 
-Caja uses a **desktop-first** responsive system with three breakpoints:
+Caja uses a **large-first** responsive system with three breakpoints:
 
 | Breakpoint | Label | Width |
 |------------|-------|-------|
-| `base` | Desktop | Full width |
-| `md` | Tablet | ≤ 768px |
-| `sm` | Mobile | ≤ 640px |
+| `base` | LG (Large) | Full width |
+| `xl` | MD (Medium) | 1024px |
+| `md` | SM (Small) | 480px |
 
 Switch breakpoints from the toolbar. When a non-base breakpoint is active:
 
 - The canvas resizes to match the breakpoint width
 - Property changes are saved as **responsive overrides** (only the differences from desktop)
-- The Layers Panel shows small badges (`md`, `sm`) on frames that have overrides
+- The Layers Panel shows small badges (`MD`, `SM`) on frames that have overrides
 - Property sections show an accent dot when they contain overrides, with a reset button on hover
 
-Responsive overrides generate `max-md:` and `max-sm:` prefixed Tailwind classes on export.
+Responsive overrides generate `max-xl:` and `max-md:` prefixed Tailwind classes on export.
 
 ## Preview Mode
 
-Toggle with `⌘⇧P`. In preview mode:
+Toggle with `⌘P`. In preview mode:
 
 - All editing tools are disabled
 - Links become clickable and navigate between pages

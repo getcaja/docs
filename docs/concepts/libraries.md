@@ -35,6 +35,12 @@ Agents can also manage the component library programmatically:
     }
   }
 }
+
+// Export library
+{
+  "tool": "export_library",
+  "params": { "name": "My Library", "version": "1.0.0" }
+}
 ```
 
 ## The .cjl Format
@@ -45,6 +51,8 @@ A `.cjl` file is a JSON package containing one or more components with metadata:
 {
   "name": "My Library",
   "version": "1.0.0",
+  "author": "Author Name",
+  "description": "Library description",
   "components": [
     {
       "id": "comp_1",
@@ -57,30 +65,6 @@ A `.cjl` file is a JSON package containing one or more components with metadata:
 ```
 
 Each component stores its full frame tree, so instances are self-contained.
-
-## Official Libraries
-
-Pre-built component libraries for popular design systems. Import them into any Caja project.
-
-### Radix
-
-Components matching the [Radix UI](https://www.radix-ui.com/) primitives — unstyled, accessible building blocks.
-
-Includes: Dialog, Popover, Dropdown Menu, Tabs, Toggle Group, Accordion, Tooltip, Select.
-
-::: info Coming Soon
-This library is currently in development.
-:::
-
-### shadcn/ui
-
-Components inspired by [shadcn/ui](https://ui.shadcn.com/) — beautifully designed, copy-paste ready.
-
-Includes: Button, Input, Card, Sheet, Table, Command, Avatar, Calendar, Skeleton.
-
-::: info Coming Soon
-This library is currently in development.
-:::
 
 ## Community Libraries
 

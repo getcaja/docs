@@ -60,6 +60,12 @@ Agents can work with components programmatically:
     }
   }
 }
+
+// Export library as .cjl file
+{
+  "tool": "export_library",
+  "params": { "name": "My Library", "version": "1.0.0" }
+}
 ```
 
 ## Community Libraries

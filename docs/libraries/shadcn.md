@@ -3,7 +3,7 @@
 Components inspired by [shadcn/ui](https://ui.shadcn.com/) — beautifully designed, copy-paste ready.
 
 ::: info Coming Soon
-This library is currently in development.
+This library is planned for a future release.
 :::
 
 ## Planned Components

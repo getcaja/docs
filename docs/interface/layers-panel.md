@@ -10,7 +10,7 @@ Lists all pages in the project. Click a page to switch to it. Use the `+` button
 ### Layers Section
 Shows the frame tree for the active page. Each node displays:
 
-- **Type icon** — Frame, Text, Image, Button, etc.
+- **Type icon** — Frame, Text, Image, Button, etc. Component instances show a component icon instead of the default type icon.
 - **Name** — Double-click or press `F2` to rename.
 - **Visibility toggle** — Hide/show elements without deleting them.
 - **Expand/collapse** — Click the chevron to toggle children.
@@ -28,6 +28,10 @@ Right-click any element for:
 | Duplicate | `⌘D` |
 | Create Component | — |
 | Delete | `Delete` |
+
+For component instances, the context menu also includes **Edit Master**, **Reset Instance**, and **Detach Instance**.
+
+Copy (`⌘C`), Cut (`⌘X`), and Paste (`⌘V`) work via keyboard shortcuts when the tree panel is focused.
 
 ### Add Element
 Click the `+` button in the Layers header to insert elements: Add Frame, Add Text, Add Link, Add Image, Add Button, Add Input, Add Textarea, or Add Select.
